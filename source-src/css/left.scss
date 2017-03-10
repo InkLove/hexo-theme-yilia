@@ -20,6 +20,41 @@
 		text-align: center;
 		margin: 112px auto 0;
 	}
+	#left-col-close{
+	    float: right;
+	    margin-top: 10px;
+	    margin-right: 10px;
+	    display: none;
+	}
+
+	.close-icon{
+	    position: relative;
+	    height: 30px;
+	    width: 30px;
+	}
+
+	.close-icon-ltor,
+	.close-icon-rtol{
+	    position: absolute;
+	    top: 50%;
+	    height: 2px;
+	    width: 100%;
+	    background-color: white;
+	}
+	.close-icon-rtol{
+	    transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);       /* IE 9 */
+	    -webkit-transform: rotate(45deg);   /* Safari and Chrome */
+	    -o-transform: rotate(45deg);        /* Opera */
+	    -moz-transform: rotate(45deg);      /* Firefox */
+	}
+	.close-icon-ltor{
+	    transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);       /* IE 9 */
+	    -webkit-transform: rotate(-45deg);   /* Safari and Chrome */
+	    -o-transform: rotate(-45deg);        /* Opera */
+	    -moz-transform: rotate(-45deg);      /* Firefox */
+	}
 
 	#header{
 		width:100%;
@@ -112,6 +147,58 @@
 			font-family: Roboto, "Roboto", serif;
 			font-size: 30px;
 			transition: 0.3s;
+		}
+
+	}
+}
+.left-col.hide{
+	left: -300px;
+}
+#left-col-open{
+	position:fixed;
+	left: 5px;
+	top: 20px;
+	z-index: 999;
+	display:none;
+	background-color: rgba(77, 77, 77, 0.3);
+
+	.open-arrow{
+		width: 20px;
+		height: 20px;
+		position: relative;
+
+		.open-arrow-line,
+		.open-arrow-ltor,
+		.open-arrow-rtol{
+			position: absolute;
+			background-color: white;
+		}
+
+		.open-arrow-line{
+			width: 100%;
+			height: 5px;
+			top: 7.5px;
+		}
+		.open-arrow-ltor{
+			width: 5px;
+			height: 14.4px;
+			right: 2px;
+			transform: rotate(-45deg);
+		    -ms-transform: rotate(-45deg);       /* IE 9 */
+		    -webkit-transform: rotate(-45deg);   /* Safari and Chrome */
+		    -o-transform: rotate(-45deg);        /* Opera */
+		    -moz-transform: rotate(-45deg);      /* Firefox */
+		}
+		.open-arrow-rtol{
+			width: 5px;
+			height: 14.4px;
+			right: 2px;
+			bottom: 0;
+		    transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);       /* IE 9 */
+		    -webkit-transform: rotate(45deg);   /* Safari and Chrome */
+		    -o-transform: rotate(45deg);        /* Opera */
+		    -moz-transform: rotate(45deg);      /* Firefox */
 		}
 	}
 }

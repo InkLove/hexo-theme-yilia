@@ -5,6 +5,13 @@
     <div class="left-col" q-class="show:isShow">
       <%- partial('_partial/left-col', null, {cache: !config.relative_link}) %>
     </div>
+    <a href="#" id="left-col-open">
+      <div class="open-arrow">
+        <div class="open-arrow-line"></div>
+        <div class="open-arrow-ltor"></div>
+        <div class="open-arrow-rtol"></div>
+      </div>
+    </a>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
       <div id="wrapper" class="body-wrap">

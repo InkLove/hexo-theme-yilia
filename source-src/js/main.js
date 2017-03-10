@@ -7,9 +7,12 @@ import Viewer from './viewer'
 // 分享
 import Share from './share'
 
+import LeftCol from './left'
+
 import {addLoadEvent} from './util'
 
 addLoadEvent(function() {
 	Share.init()
 	Viewer.init()
+    LeftCol.init()
 })
